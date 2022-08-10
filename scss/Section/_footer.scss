@@ -9,43 +9,39 @@ footer {
 .footer_info {
   display: flex;
   justify-content: space-between;
+  &_block {
+    width: 193px;
+    display: flex;
+    justify-content: space-between;
+  }
   &_link {
-    margin-right: 47px;
     @include font(500, 18, 21);
-    // font-weight: 500;
-    // font-size: 18px;
-    // line-height: 21px;
     color: #FFFFFF;
   }
-  &_link:last-child {
-    margin-right: 0;
-  }
+}
+
+.footer_social_block {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
 }
 
 .footer_social_vk {
-  display: inline-block;
   width: 25px;
   height: 25px;
   @include cover("../images/vk.svg");
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-image: url('../images/vk.svg');
 }
 
 .footer_social_insta {
-  margin-left: 20px;
-  display: inline-block;
   width: 25px;
   height: 25px;
   @include cover("../images/inst.svg");
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-image: url('../images/inst.svg');
 }
 
 .footer_phone {
+  width: 193px;
+  display: flex;
+  justify-content: end;
   color: #fff;
   &::before {
     content:url("../images/carbon_phone_white.svg");

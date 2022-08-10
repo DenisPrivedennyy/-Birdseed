@@ -59,6 +59,7 @@
 }
 
 .navigation {
+  display: flex;
   @include font(500, 18, 21);
   &__link {
     margin-left: 40px;

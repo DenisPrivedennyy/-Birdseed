@@ -417,6 +417,7 @@ body {
 }
 
 .navigation {
+  display: flex;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -682,19 +683,25 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.footer_info_block {
+  width: 193px;
+  display: flex;
+  justify-content: space-between;
+}
 .footer_info_link {
-  margin-right: 47px;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
 }
-.footer_info_link:last-child {
-  margin-right: 0;
+
+.footer_social_block {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
 }
 
 .footer_social_vk {
-  display: inline-block;
   width: 25px;
   height: 25px;
   background-position: center;
@@ -704,8 +711,6 @@ footer {
 }
 
 .footer_social_insta {
-  margin-left: 20px;
-  display: inline-block;
   width: 25px;
   height: 25px;
   background-position: center;
@@ -715,6 +720,9 @@ footer {
 }
 
 .footer_phone {
+  width: 193px;
+  display: flex;
+  justify-content: end;
   color: #fff;
 }
 .footer_phone::before {
