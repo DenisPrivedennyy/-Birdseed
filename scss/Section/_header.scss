@@ -1,0 +1,106 @@
+@use "../mixins" as *;
+
+.header {
+  padding-top: 33px;
+  padding-bottom: 30px;
+  background-color: #FFFFFF;
+}
+
+.head {
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.phone {
+  display: inline-block;
+  @include font(400, 18, 21);
+  color: #000;
+  &::before {
+    content:url("../images/carbon_phone.svg");
+    margin-right: 9px;
+    vertical-align: middle;
+  }
+}
+
+.basket {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-left: 60px;
+  margin-right: 15px;
+  @include cover("../images/basket.svg");
+}
+
+.basket_value {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #06D10E;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: -8px;
+  right: -5px;
+}
+
+.account {
+  width: 30px;
+  height: 30px;
+  @include cover("../images/account.svg");
+}
+
+.contacts {
+  margin-bottom: 42px;
+}
+
+.navigation {
+  @include font(500, 18, 21);
+  &__link {
+    margin-left: 40px;
+    color: #4F4F4F;
+  }
+  &__link:first-child {
+    margin-left: 0;
+  }
+  &__link--active::after {
+    content: url("../images/arrow_down.svg");
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+}
+
+.search {
+  position: relative;
+  a {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  input[type=search] {
+    padding-right: 55px;
+    @include font(400, 18, 21);
+  }
+}
+
+.find {
+  width: 345px;
+  height: 54px;
+  padding-left: 20px;
+  left: 1273px;
+  top: 120px;
+  background: #F2F2F2;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  &::placeholder {
+    @include font(400, 18, 21);
+    color: #828282;
+  }
+  &:checked {
+    outline: none;
+  }
+}
